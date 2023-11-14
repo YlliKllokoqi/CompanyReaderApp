@@ -20,7 +20,8 @@ namespace CompanyReader.Infrastructure.Persistence
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=Ylli\\SQLEXPRESS;Database=CompanyReaderDb;Integrated Security=True;Encrypt=False;");
+            optionsBuilder.UseInMemoryDatabase("companyReaderdb");
+
         }
 
 
